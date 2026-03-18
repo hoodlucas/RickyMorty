@@ -26,7 +26,8 @@ function renderCharacters (arr){
                     <p class="card-text">${arr[index].gender}</p>
                     <p class="card-text">${arr[index].status}</p>
                     <p class="card-text">${arr[index].type}</p>
-                    <a href="details.html" class="btn btn-primary">More information</a>
+                    <a href="details.html?id=${arr[index].id}" class="btn btn-primary">More information</a>
+        </div>
                 </div>
             </div>`;
     }
@@ -39,7 +40,7 @@ function renderLocation(arr) {
         <div class="card-body">
             <h5 class="card-title">${arr[index].name}</h5>
             <p class="card-text">${arr[index].dimension}</p>
-            <a href="/details.html" class="btn btn-primary">Learn more!</a>
+            <a href="details.html?location=${arr[index].id}" class="btn btn-primary">Learn More</a>
         </div>
         </div>`
         
