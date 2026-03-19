@@ -36,7 +36,7 @@ function renderCharacters (arr){
 function renderLocation(arr) {
     for (let index = 0; index < arr.length; index++) {
         document.querySelector('.location').innerHTML += `<div class="card flex-shrink-0 me-3" style="width: 18rem;">
-        <img src="/rickymorty/images/location.jpg" class="card-img-top" alt="imagen de ubicación">
+        <img src="/images/location.jpg" class="card-img-top" alt="imagen de ubicación">
         <div class="card-body">
             <h5 class="card-title">${arr[index].name}</h5>
             <p class="card-text">${arr[index].dimension}</p>
